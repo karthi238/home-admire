@@ -1287,7 +1287,7 @@
     margin-bottom: 14px;
 }
 
-.ttm-facts-colum-sep .col-md-3:not(:last-child):after {
+.ttm-facts-colum-sep .col-md-4:not(:last-child):after {
     content: "";
     height: 100%;
     width: 1px;
