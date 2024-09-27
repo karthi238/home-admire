@@ -2,6 +2,11 @@
     background-color: rgba(255, 255, 255, 0.88);
 }
 
+.home-bg-video {
+    object-fit: cover;
+    height: 100%;
+}
+
 .home-logo-style {
     max-height: none !important;
     width: 120px;
@@ -13,6 +18,14 @@
 
 .home-text {
     max-width: 70%;
+    min-width: 400px !important;
+}
+
+@media screen and (max-width: 481px) {
+    .home-text {
+        width: 300px !important;
+        min-width: 100px !important
+    }
 }
 
 .tp-parallax-wrap {
