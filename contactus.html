@@ -228,11 +228,9 @@
                   </div>
                   <!-- section title end -->
                   <form
-                    id="ttm-quote-form"
+                    id="request-quote-form"
                     class="ttm-quote-form wrap-form clearfix"
                     method="post"
-                    action="mailto:homeadmireinfo@gmail.com"
-                    enctype="text/plain"
                   >
                     <div class="row">
                       <div class="col-lg-6">
@@ -240,6 +238,7 @@
                           <span class="text-input"
                             ><input
                               name="name"
+                              id="request-quote-name"
                               type="text"
                               value=""
                               placeholder="Full Name"
@@ -251,7 +250,8 @@
                         <label>
                           <span class="text-input"
                             ><input
-                              name="address"
+                              name="email"
+                              id="request-quote-email"
                               type="text"
                               value=""
                               placeholder="Email Address"
@@ -266,6 +266,7 @@
                           <span class="text-input"
                             ><input
                               name="phone"
+                              id="request-quote-phone"
                               type="text"
                               value=""
                               placeholder="Phone Number"
@@ -277,7 +278,8 @@
                         <label>
                           <span class="text-input"
                             ><input
-                              name="code"
+                              name="pincode"
+                              id="request-quote-pincode"
                               type="text"
                               value=""
                               placeholder="Zip Code"
@@ -290,7 +292,7 @@
                       <span class="text-input">
                         <textarea
                           name="message"
-                          cols="35"
+                          id="request-quote-message"
                           rows="4"
                           placeholder="Your Message"
                           required="required"
@@ -300,7 +302,7 @@
                     <input
                       name="submit"
                       type="submit"
-                      id="submit"
+                      id="submit-request-quote"
                       class="submit"
                       value="GET A FREE QUOTE"
                     />
@@ -501,6 +503,20 @@
     <script src="js/jquery.prettyPhoto.js"></script>
     <script src="js/numinate.min6959.js?ver=4.9.3"></script>
     <script src="js/main.js"></script>
+
+    <!-- EmailJS Config -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "N4op7XCcAB8278gM8",
+        });
+      })();
+    </script>
+    <script type="text/javascript" src="./js/sendEmail.js"></script>
     <!-- Javascript end-->
   </body>
 
