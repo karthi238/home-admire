@@ -477,7 +477,7 @@
 
 .col-bg-img-three.ttm-col-bgimage-yes .ttm-col-wrapper-bg-layer {
     background-image: url(../images/bg-image/col-bgimage-3.jpg) !important;
-    background-position: center !important;
+    background-position: top !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
 }
