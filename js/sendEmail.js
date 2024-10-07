@@ -3,6 +3,7 @@ const nameInput = document.getElementById('request-quote-name');
 const emailInput = document.getElementById('request-quote-email');
 const phoneInput = document.getElementById('request-quote-phone');
 const pincodeInput = document.getElementById('request-quote-pincode');
+const addressInput = document.getElementById('request-quote-address');
 const messageInput = document.getElementById('request-quote-message');
 
 
@@ -22,6 +23,7 @@ window.document.getElementById('request-quote-form')
                 emailInput.value = "";
                 phoneInput.value = "";
                 pincodeInput.value = "";
+                addressInput.value = "";
                 messageInput.value = "";
                 alert('Request Sent!');
             }, (err) => {
